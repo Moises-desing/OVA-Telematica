@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OVA de Telemática sobre la capa de Internet del modelo TCP/IP: guías, simuladores, retos, juegos y evaluación final.">
+    <title>Evaluación final | OVA Capa de Internet</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <script>(function () { try { var t = localStorage.getItem('ova_tema'); if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = t } catch (e) { } })();</script>
+</head>
+
+<body style="--mc:var(--m4)">
+
+    <header class="barra">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span>OVA · Capa de
+                    Internet</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"
+                aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg></button>
+            <div class="menu" id="menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="drop"><button class="drop-btn" type="button" aria-expanded="false"
+                            aria-haspopup="true">Unidades</button>
+                        <ul class="drop-menu">
+                            <li><a href="unidad1.html" data-prog="u1" style="--mc:var(--m1)"><span class="n"
+                                        style="--c:var(--m1)">1</span>Generalidades del nivel de red</a></li>
+                            <li><a href="unidad2.html" data-prog="u2" style="--mc:var(--m2)"><span class="n"
+                                        style="--c:var(--m2)">2</span>Redes de circuitos virtuales y datagramas</a></li>
+                            <li><a href="unidad3.html" data-prog="u3" style="--mc:var(--m3)"><span class="n"
+                                        style="--c:var(--m3)">3</span>Principios de procesamiento del router</a></li>
+                            <li><a href="unidad4.html" data-prog="u4" style="--mc:var(--m4)"><span class="n"
+                                        style="--c:var(--m4)">4</span>Protocolos de Internet: IPv4 e IPv6</a></li>
+                            <li><a href="unidad5.html" data-prog="u5" style="--mc:var(--m5)"><span class="n"
+                                        style="--c:var(--m5)">5</span>Protocolo de mensajes de control de Internet:
+                                    ICMP</a></li>
+                            <li><a href="unidad6.html" data-prog="u6" style="--mc:var(--m6)"><span class="n"
+                                        style="--c:var(--m6)">6</span>Enrutamiento en Internet</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="retos.html">Retos</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="examen.html" class="active" aria-current="page">Evaluación</a></li>
+                    <li><a href="creditos.html">Créditos</a></li>
+                </ul>
+                <div class="hud">
+                    <div class="xp" id="xpRing" role="img" aria-label="Progreso total"><b id="xpNum">0%</b></div>
+                    <div class="hudtxt"><b id="xpTxt">0/230 pts</b><small id="xpLvl">Novato</small></div>
+                    <button class="btn alt icon" id="sndBtn" type="button" aria-pressed="false" aria-label="Sonido"
+                        data-tip="Sonidos suaves al pulsar y acertar (apagado por defecto)"><svg class="on-ico"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                            <path d="M16 8.5a5 5 0 010 7M18.8 5.7a9 9 0 010 12.6" />
+                        </svg><svg class="off-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                            <path d="M16 9l5 6M21 9l-5 6" />
+                        </svg></button>
+                    <button class="btn alt icon" id="themeBtn" type="button"
+                        aria-label="Cambiar entre tema claro y oscuro" data-tip="Tema claro u oscuro"><svg
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8" />
+                            <path d="M12 4a8 8 0 010 16z" fill="currentColor" />
+                        </svg></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="encabezado-pagina">
+        <div class="contenedor">
+            <div class="modnum" aria-hidden="true">✓</div>
+            <div>
+                <p class="owner">Trabajo conjunto del equipo</p>
+                <h1>Evaluación final integradora</h1>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="story"><b>Cómo funciona.</b> 18 preguntas, tres de cada unidad, elegidas al azar. Responde y pulsa
+            «Enviar». Con 70 % o más obtienes una constancia de autoevaluación. Puedes repetirla las veces que quieras.
+        </div>
+        <div class="card" style="--mc:var(--m4)"><span class="tag">Evaluación</span>
+            <div class="row">
+                <div style="max-width:380px"><label for="nameIn">Tu nombre (para la constancia)</label><input
+                        id="nameIn" type="text" autocomplete="name" maxlength="60" placeholder="Nombre y apellido">
+                </div>
+            </div>
+            <form id="qForm" class="quiz" onsubmit="return false"></form>
+            <div class="row" style="margin-top:14px">
+                <div class="fit"><button class="btn m5" type="button" id="qSend">Enviar evaluación</button></div>
+                <div class="fit"><button class="btn alt" type="button" id="qNew">Nuevo intento</button></div>
+            </div>
+            <p id="qScore" class="mono" style="font-weight:700;margin-top:12px" role="status" aria-live="polite"></p>
+            <div id="qDet"></div>
+            <div id="qCert"></div>
+        </div>
+        <div class="pager"><a class="btn alt" href="juegos.html">Anterior: Juegos</a><a class="btn"
+                href="creditos.html">Siguiente: Créditos</a></div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>OVA «La capa de Internet del modelo TCP/IP» · Telemática · Universidad de Córdoba · Autores: Juan Felipe
+            Reino Benitez, Carlos Eduardo Garavito Mozo, Junior Madera y Moisés Montiel.</p>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="tip" id="tip" role="tooltip"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/banco_examen.js"></script>
+    <script src="js/examen.js"></script>
+</body>
+
+</html>
