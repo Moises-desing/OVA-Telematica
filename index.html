@@ -4,40 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OVA de Telemática sobre la capa de Internet del modelo TCP/IP: guías, simuladores, retos, juegos y evaluación final.">
+    <meta name="description"
+        content="OVA de Telemática sobre la capa de Internet del modelo TCP/IP: guías, simuladores, retos, juegos y evaluación final.">
     <title>Inicio | OVA Capa de Internet</title>
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/componentes.css">
-    <script>(function(){try{var t=localStorage.getItem('ova_tema');if(!t)t='dark';document.documentElement.dataset.theme=t}catch(e){}})();</script>
+    <script>(function () { try { var t = localStorage.getItem('ova_tema'); if (!t) t = 'dark'; document.documentElement.dataset.theme = t } catch (e) { } })();</script>
 </head>
 
 <body style="--mc:var(--m1)">
-<div class="aviso-zip" role="alert" style="background:#2fc6b8;color:#0e0e10;padding:14px 18px;font:600 16px/1.5 Segoe UI,Arial,sans-serif">Esta página se abrió sin sus estilos ni sus programas. Descomprime primero el .zip completo (clic derecho &gt; «Extraer todo») y abre <b>index.html</b> desde la carpeta extraída, no desde dentro del .zip.</div>
+    <div class="aviso-zip" role="alert"
+        style="background:#2fc6b8;color:#0e0e10;padding:14px 18px;font:600 16px/1.5 Segoe UI,Arial,sans-serif">Esta
+        página se abrió sin sus estilos ni sus programas. Descomprime primero el .zip completo (clic derecho &gt;
+        «Extraer todo») y abre <b>index.html</b> desde la carpeta extraída, no desde dentro del .zip.</div>
 
-<header class="barra">
-    <nav class="navbar" aria-label="Navegación principal">
-        <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span>OVA · Capa de Internet</span></a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-        <div class="menu" id="menu">
-            <ul class="nav-links">
-                <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
-                <li class="drop"><button class="drop-btn" type="button" aria-expanded="false" aria-haspopup="true">Unidades</button>
-                    <ul class="drop-menu"><li><a href="unidad1.html" data-prog="u1" style="--mc:var(--m1)"><span class="n" style="--c:var(--m1)">1</span>Generalidades del nivel de red</a></li><li><a href="unidad2.html" data-prog="u2" style="--mc:var(--m2)"><span class="n" style="--c:var(--m2)">2</span>Redes de circuitos virtuales y datagramas</a></li><li><a href="unidad3.html" data-prog="u3" style="--mc:var(--m3)"><span class="n" style="--c:var(--m3)">3</span>Principios de procesamiento del router</a></li><li><a href="unidad4.html" data-prog="u4" style="--mc:var(--m4)"><span class="n" style="--c:var(--m4)">4</span>Protocolos de Internet: IPv4 e IPv6</a></li><li><a href="unidad5.html" data-prog="u5" style="--mc:var(--m5)"><span class="n" style="--c:var(--m5)">5</span>Protocolo de mensajes de control de Internet: ICMP</a></li><li><a href="unidad6.html" data-prog="u6" style="--mc:var(--m6)"><span class="n" style="--c:var(--m6)">6</span>Enrutamiento en Internet</a></li></ul></li>
-                <li><a href="retos.html">Retos</a></li>
-                <li><a href="juegos.html">Juegos</a></li>
-                <li><a href="examen.html">Evaluación</a></li>
-                <li><a href="creditos.html">Créditos</a></li>
-            </ul>
-            <div class="hud">
-                <div class="xp" id="xpRing" role="img" aria-label="Progreso total"><b id="xpNum">0%</b></div>
-                <div class="hudtxt"><b id="xpTxt">0/230 pts</b><small id="xpLvl">Novato</small></div>
-                <button class="btn alt icon" id="sndBtn" type="button" aria-pressed="false" aria-label="Sonido" data-tip="Sonidos suaves al pulsar y acertar (apagado por defecto)"><svg class="on-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M16 8.5a5 5 0 010 7M18.8 5.7a9 9 0 010 12.6"/></svg><svg class="off-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M16 9l5 6M21 9l-5 6"/></svg></button>
-                <button class="btn alt icon" id="themeBtn" type="button" aria-label="Cambiar entre tema claro y oscuro" data-tip="Tema claro u oscuro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 010 16z" fill="currentColor"/></svg></button>
+    <header class="barra">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span>OVA · Capa de
+                    Internet</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"
+                aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg></button>
+            <div class="menu" id="menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+                    <li class="drop"><button class="drop-btn" type="button" aria-expanded="false"
+                            aria-haspopup="true">Unidades</button>
+                        <ul class="drop-menu">
+                            <li><a href="unidad1.html" data-prog="u1" style="--mc:var(--m1)"><span class="n"
+                                        style="--c:var(--m1)">1</span>Generalidades del nivel de red</a></li>
+                            <li><a href="unidad2.html" data-prog="u2" style="--mc:var(--m2)"><span class="n"
+                                        style="--c:var(--m2)">2</span>Redes de circuitos virtuales y datagramas</a></li>
+                            <li><a href="unidad3.html" data-prog="u3" style="--mc:var(--m3)"><span class="n"
+                                        style="--c:var(--m3)">3</span>Principios de procesamiento del router</a></li>
+                            <li><a href="unidad4.html" data-prog="u4" style="--mc:var(--m4)"><span class="n"
+                                        style="--c:var(--m4)">4</span>Protocolos de Internet: IPv4 e IPv6</a></li>
+                            <li><a href="unidad5.html" data-prog="u5" style="--mc:var(--m5)"><span class="n"
+                                        style="--c:var(--m5)">5</span>Protocolo de mensajes de control de Internet:
+                                    ICMP</a></li>
+                            <li><a href="unidad6.html" data-prog="u6" style="--mc:var(--m6)"><span class="n"
+                                        style="--c:var(--m6)">6</span>Enrutamiento en Internet</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="retos.html">Retos</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="examen.html">Evaluación</a></li>
+                    <li><a href="creditos.html">Créditos</a></li>
+                </ul>
+                <div class="hud">
+                    <div class="xp" id="xpRing" role="img" aria-label="Progreso total"><b id="xpNum">0%</b></div>
+                    <div class="hudtxt"><b id="xpTxt">0/230 pts</b><small id="xpLvl">Novato</small></div>
+                    <button class="btn alt icon" id="sndBtn" type="button" aria-pressed="false" aria-label="Sonido"
+                        data-tip="Sonidos suaves al pulsar y acertar (apagado por defecto)"><svg class="on-ico"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                            <path d="M16 8.5a5 5 0 010 7M18.8 5.7a9 9 0 010 12.6" />
+                        </svg><svg class="off-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                            <path d="M16 9l5 6M21 9l-5 6" />
+                        </svg></button>
+                    <button class="btn alt icon" id="themeBtn" type="button"
+                        aria-label="Cambiar entre tema claro y oscuro" data-tip="Tema claro u oscuro"><svg
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8" />
+                            <path d="M12 4a8 8 0 010 16z" fill="currentColor" />
+                        </svg></button>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
     <section class="portada">
@@ -45,31 +86,55 @@
             <div>
                 <span class="etiqueta">OVA de Telemática sobre la capa de Internet</span>
                 <h1>La capa de Internet: el viaje de un paquete</h1>
-                <p>Un recurso interactivo para entender cómo viajan los datos entre redes: direccionamiento IP, routers, IPv4 e IPv6, ICMP y enrutamiento. Cada unidad tiene una guía, simuladores, cuestionario y retos; al final, una evaluación integradora con constancia.</p>
+                <p>Un recurso interactivo para entender cómo viajan los datos entre redes: direccionamiento IP, routers,
+                    IPv4 e IPv6, ICMP y enrutamiento. Cada unidad tiene una guía, simuladores, cuestionario y retos; al
+                    final, una evaluación integradora con constancia.</p>
                 <div class="acciones">
                     <a href="unidad1.html" class="btn claro">Empezar por la Unidad 1</a>
                     <a href="retos.html" class="btn borde">Ir a los retos</a>
                 </div>
             </div>
             <div class="heroCard" aria-label="Demostración: un paquete atraviesa tres routers">
-                <div class="hc-top"><span>Envía un paquete y mira su TTL</span><span class="hc-ip" id="hpTtl">TTL: -</span></div>
-                <svg class="nw" viewBox="0 0 340 100" role="img" aria-label="Un paquete viaja del computador al servidor pasando por tres routers; cada router resta 1 al TTL">
-                    <path class="ln" d="M34 40 H306"/>
-                    <g><rect class="nd" x="12" y="24" width="44" height="32" rx="8"/><text class="tx" x="34" y="44">PC</text></g>
-                    <g id="hr1"><circle class="nd" cx="108" cy="40" r="19"/><text class="tx" x="108" y="43">R1</text></g>
-                    <g id="hr2"><circle class="nd" cx="172" cy="40" r="19"/><text class="tx" x="172" y="43">R2</text></g>
-                    <g id="hr3"><circle class="nd" cx="236" cy="40" r="19"/><text class="tx" x="236" y="43">R3</text></g>
-                    <g><rect class="nd" x="284" y="24" width="44" height="32" rx="8"/><text class="tx" x="306" y="44">Srv</text></g>
-                    <g id="hpk" style="transform:translate(34px,40px);opacity:0"><rect x="-26" y="-34" width="52" height="20" rx="7" style="fill:var(--m4)"/><text id="hpkT" x="0" y="-20" text-anchor="middle" style="fill:var(--on);font:700 10px var(--mono)">TTL 64</text></g>
+                <div class="hc-top"><span>Envía un paquete y mira su TTL</span><span class="hc-ip" id="hpTtl">TTL:
+                        -</span></div>
+                <svg class="nw" viewBox="0 0 340 100" role="img"
+                    aria-label="Un paquete viaja del computador al servidor pasando por tres routers; cada router resta 1 al TTL">
+                    <path class="ln" d="M34 40 H306" />
+                    <g>
+                        <rect class="nd" x="12" y="24" width="44" height="32" rx="8" /><text class="tx" x="34"
+                            y="44">PC</text>
+                    </g>
+                    <g id="hr1">
+                        <circle class="nd" cx="108" cy="40" r="19" /><text class="tx" x="108" y="43">R1</text>
+                    </g>
+                    <g id="hr2">
+                        <circle class="nd" cx="172" cy="40" r="19" /><text class="tx" x="172" y="43">R2</text>
+                    </g>
+                    <g id="hr3">
+                        <circle class="nd" cx="236" cy="40" r="19" /><text class="tx" x="236" y="43">R3</text>
+                    </g>
+                    <g>
+                        <rect class="nd" x="284" y="24" width="44" height="32" rx="8" /><text class="tx" x="306"
+                            y="44">Srv</text>
+                    </g>
+                    <g id="hpk" style="transform:translate(34px,40px);opacity:0">
+                        <rect x="-26" y="-34" width="52" height="20" rx="7" style="fill:var(--m4)" /><text id="hpkT"
+                            x="0" y="-20" text-anchor="middle" style="fill:var(--on);font:700 10px var(--mono)">TTL
+                            64</text>
+                    </g>
                 </svg>
-                <div class="hc-foot"><button class="btn sm" type="button" id="hSend64">Enviar con TTL 64</button><button class="btn alt sm" type="button" id="hSend3">Enviar con TTL 3</button></div>
-                <p class="hint" id="hLog" role="status" aria-live="polite" style="margin:10px 0 0">Cada router resta 1 al TTL. Con TTL 3, el paquete no llega.</p>
+                <div class="hc-foot"><button class="btn sm" type="button" id="hSend64">Enviar con TTL 64</button><button
+                        class="btn alt sm" type="button" id="hSend3">Enviar con TTL 3</button></div>
+                <p class="hint" id="hLog" role="status" aria-live="polite" style="margin:10px 0 0">Cada router resta 1
+                    al TTL. Con TTL 3, el paquete no llega.</p>
             </div>
         </div>
     </section>
     <main>
         <section class="objetivos" aria-labelledby="tObj">
-            <div><span class="tag">Objetivos de aprendizaje</span><h2 id="tObj">Al terminar este OVA podrás…</h2></div>
+            <div><span class="tag">Objetivos de aprendizaje</span>
+                <h2 id="tObj">Al terminar este OVA podrás…</h2>
+            </div>
             <ol>
                 <li>Explicar la función de la capa de Internet y su relación con las demás capas de TCP/IP.</li>
                 <li>Diferenciar redes de datagramas y de circuitos virtuales y seguir el recorrido de un paquete.</li>
@@ -81,55 +146,151 @@
         </section>
 
         <h2 class="titulo-seccion">Menú de unidades</h2>
-        <p class="hint">Seis saltos, del concepto general al enrutamiento entre redes. La barra de cada unidad muestra tu avance.</p>
+        <p class="hint">Seis saltos, del concepto general al enrutamiento entre redes. La barra de cada unidad muestra
+            tu avance.</p>
         <ol class="ruta">
-            <li><a href="unidad1.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">1</span><span><b><span class="sr">Unidad 1: </span>Generalidades del nivel de red</b><small>Funciones, ubicación en TCP/IP, encapsulación, reenvío y enrutamiento.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u1"></i></span></a></li>
-            <li><a href="unidad2.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">2</span><span><b><span class="sr">Unidad 2: </span>Redes de circuitos virtuales y datagramas</b><small>Dos modelos de red, sus diferencias y un simulador de recorrido de paquetes.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u2"></i></span></a></li>
-            <li><a href="unidad3.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">3</span><span><b><span class="sr">Unidad 3: </span>Principios de procesamiento del router</b><small>Arquitectura, tablas de reenvío, conmutación, colas y congestión.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u3"></i></span></a></li>
-            <li><a href="unidad4.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">4</span><span><b><span class="sr">Unidad 4: </span>Protocolos de Internet: IPv4 e IPv6</b><small>Encabezados, direcciones, subredes, abreviación IPv6 y transición.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u4"></i></span></a></li>
-            <li><a href="unidad5.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">5</span><span><b><span class="sr">Unidad 5: </span>ICMP</b><small>Mensajes de control, Ping y Traceroute con simuladores.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u5"></i></span></a></li>
-            <li><a href="unidad6.html" style="--mc:var(--m1)"><span class="hop" aria-hidden="true">6</span><span><b><span class="sr">Unidad 6: </span>Enrutamiento en Internet</b><small>Estático y dinámico, estado de enlace, vector de distancia, RIP, OSPF y BGP.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u6"></i></span></a></li>
+            <li><a href="unidad1.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">1</span><span><b><span class="sr">Unidad 1: </span>Generalidades del nivel de
+                            red</b><small>Funciones, ubicación en TCP/IP, encapsulación, reenvío y
+                            enrutamiento.</small></span><span class="qprog" aria-hidden="true"><i
+                            data-bar="u1"></i></span></a></li>
+            <li><a href="unidad2.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">2</span><span><b><span class="sr">Unidad 2: </span>Redes de circuitos
+                            virtuales y datagramas</b><small>Dos modelos de red, sus diferencias y un simulador de
+                            recorrido de paquetes.</small></span><span class="qprog" aria-hidden="true"><i
+                            data-bar="u2"></i></span></a></li>
+            <li><a href="unidad3.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">3</span><span><b><span class="sr">Unidad 3: </span>Principios de
+                            procesamiento del router</b><small>Arquitectura, tablas de reenvío, conmutación, colas y
+                            congestión.</small></span><span class="qprog" aria-hidden="true"><i
+                            data-bar="u3"></i></span></a></li>
+            <li><a href="unidad4.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">4</span><span><b><span class="sr">Unidad 4: </span>Protocolos de Internet:
+                            IPv4 e IPv6</b><small>Encabezados, direcciones, subredes, abreviación IPv6 y
+                            transición.</small></span><span class="qprog" aria-hidden="true"><i
+                            data-bar="u4"></i></span></a></li>
+            <li><a href="unidad5.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">5</span><span><b><span class="sr">Unidad 5: </span>ICMP</b><small>Mensajes de
+                            control, Ping y Traceroute con simuladores.</small></span><span class="qprog"
+                        aria-hidden="true"><i data-bar="u5"></i></span></a></li>
+            <li><a href="unidad6.html" style="--mc:var(--m1)"><span class="hop"
+                        aria-hidden="true">6</span><span><b><span class="sr">Unidad 6: </span>Enrutamiento en
+                            Internet</b><small>Estático y dinámico, estado de enlace, vector de distancia, RIP, OSPF y
+                            BGP.</small></span><span class="qprog" aria-hidden="true"><i data-bar="u6"></i></span></a>
+            </li>
         </ol>
 
         <div class="extras">
-            <a class="card" href="retos.html"><span class="tag">Retos</span><h3>4 retos</h3><p>Encabezados, tablas de enrutamiento, Ping y Traceroute y errores de configuración.</p><div class="qprog" aria-hidden="true"><i data-bar="retos"></i></div></a>
-            <a class="card" href="juegos.html"><span class="tag">Juegos</span><h3>3 juegos</h3><p>Relacionar conceptos, ordenar las etapas de un router y responder contrarreloj.</p><div class="qprog" aria-hidden="true"><i data-bar="juegos"></i></div></a>
-            <a class="card" href="examen.html" style="--mc:var(--m4)"><span class="tag">Evaluación final</span><h3>Examen integrador</h3><p>18 preguntas de las seis unidades, con puntaje, retroalimentación y constancia.</p></a>
-            <a class="card" href="creditos.html" style="--mc:var(--m4)"><span class="tag">Créditos</span><h3>Equipo y bibliografía</h3><p>Distribución de responsabilidades, herramientas y fuentes consultadas.</p></a>
+            <a class="card" href="retos.html"><span class="tag">Retos</span>
+                <h3>4 retos</h3>
+                <p>Encabezados, tablas de enrutamiento, Ping y Traceroute y errores de configuración.</p>
+                <div class="qprog" aria-hidden="true"><i data-bar="retos"></i></div>
+            </a>
+            <a class="card" href="juegos.html"><span class="tag">Juegos</span>
+                <h3>3 juegos</h3>
+                <p>Relacionar conceptos, ordenar las etapas de un router y responder contrarreloj.</p>
+                <div class="qprog" aria-hidden="true"><i data-bar="juegos"></i></div>
+            </a>
+            <a class="card" href="examen.html" style="--mc:var(--m4)"><span class="tag">Evaluación final</span>
+                <h3>Examen integrador</h3>
+                <p>18 preguntas de las seis unidades, con puntaje, retroalimentación y constancia.</p>
+            </a>
+            <a class="card" href="creditos.html" style="--mc:var(--m4)"><span class="tag">Créditos</span>
+                <h3>Equipo y bibliografía</h3>
+                <p>Distribución de responsabilidades, herramientas y fuentes consultadas.</p>
+            </a>
         </div>
 
         <h2 class="titulo-seccion">Cómo aprovechar este recurso</h2>
         <div class="card">
             <ol class="steps4" style="margin:0">
-                <li><div><b>Elige una unidad</b> en el menú «Unidades» o en la ruta de arriba. Puedes seguir el orden o entrar donde quieras.</div></li>
-                <li><div><b>Lee la guía</b> lección por lección con los botones numerados. Las lecciones que ya viste llevan un punto verde.</div></li>
-                <li><div><b>Interactúa:</b> los simuladores, las tarjetas de conceptos y las ayudas emergentes (pasa el cursor o toca los elementos) explican con ejemplos.</div></li>
-                <li><div><b>Responde el cuestionario</b> de cada unidad: recibes retroalimentación al instante.</div></li>
-                <li><div><b>Supera los retos y juega</b> en las páginas «Retos» y «Juegos» para reforzar lo aprendido.</div></li>
-                <li><div><b>Presenta la evaluación final:</b> con 70 % o más obtienes la constancia de autoevaluación.</div></li>
-                <li><div><b>Barra superior:</b> el anillo muestra tu progreso, el botón de sonido activa clics suaves (viene apagado) y el otro cambia entre tema oscuro y claro. Todo se maneja también con teclado: <kbd>Tab</kbd>, <kbd>Enter</kbd> y <kbd>Espacio</kbd>.</div></li>
-            </ol></div>
+                <li>
+                    <div><b>Elige una unidad</b> en el menú «Unidades» o en la ruta de arriba. Puedes seguir el orden o
+                        entrar donde quieras.</div>
+                </li>
+                <li>
+                    <div><b>Lee la guía</b> lección por lección con los botones numerados. Las lecciones que ya viste
+                        llevan un punto verde.</div>
+                </li>
+                <li>
+                    <div><b>Interactúa:</b> los simuladores, las tarjetas de conceptos y las ayudas emergentes (pasa el
+                        cursor o toca los elementos) explican con ejemplos.</div>
+                </li>
+                <li>
+                    <div><b>Responde el cuestionario</b> de cada unidad: recibes retroalimentación al instante.</div>
+                </li>
+                <li>
+                    <div><b>Supera los retos y juega</b> en las páginas «Retos» y «Juegos» para reforzar lo aprendido.
+                    </div>
+                </li>
+                <li>
+                    <div><b>Presenta la evaluación final:</b> con 70 % o más obtienes la constancia de autoevaluación.
+                    </div>
+                </li>
+                <li>
+                    <div><b>Barra superior:</b> el anillo muestra tu progreso, el botón de sonido activa clics suaves
+                        (viene apagado) y el otro cambia entre tema oscuro y claro. Todo se maneja también con teclado:
+                        <kbd>Tab</kbd>, <kbd>Enter</kbd> y <kbd>Espacio</kbd>.</div>
+                </li>
+            </ol>
+        </div>
 
         <h2 class="titulo-seccion">Autores y responsabilidades principales</h2>
         <div class="team">
-            <div class="card"><h3>Juan Felipe Reino Benitez</h3><ul><li>Unidad 1: Generalidades del nivel de red</li><li>Unidad 2: Circuitos virtuales y datagramas</li><li>Reto 4: errores de direccionamiento IP</li><li>Juego 1: relacionar conceptos</li><li>Diseño de la portada y de la navegación</li></ul></div>
-            <div class="card"><h3>Carlos Eduardo Garavito Mozo</h3><ul><li>Unidad 3: Procesamiento del router</li><li>Unidad 4, parte A: IPv4, direcciones públicas y privadas, subredes</li><li>Reto 1: campos del encabezado IPv4</li><li>Juego 2: ordenar las etapas de un paquete en el router</li></ul></div>
-            <div class="card"><h3>Junior Madera</h3><ul><li>Unidad 4, parte B: IPv6, representación y transición</li><li>Unidad 5: ICMP, Ping y Traceroute</li><li>Reto 3: analizar resultados de Ping y Traceroute</li></ul></div>
-            <div class="card"><h3>Moisés Montiel</h3><ul><li>Unidad 6: Enrutamiento en Internet</li><li>Reto 2: interpretar una tabla de enrutamiento</li><li>Juego 3: preguntas contrarreloj</li><li>Bibliografía, créditos y documento de entrega</li></ul></div>
+            <div class="card">
+                <h3>Juan Felipe Reino Benitez</h3>
+                <ul>
+                    <li>Unidad 1: Generalidades del nivel de red</li>
+                    <li>Unidad 2: Circuitos virtuales y datagramas</li>
+                    <li>Reto 4: errores de direccionamiento IP</li>
+                    <li>Juego 1: relacionar conceptos</li>
+                    <li>Diseño de la portada y de la navegación</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Carlos Eduardo Garavito Mozo</h3>
+                <ul>
+                    <li>Unidad 3: Procesamiento del router</li>
+                    <li>Unidad 4, parte A: IPv4, direcciones públicas y privadas, subredes</li>
+                    <li>Reto 1: campos del encabezado IPv4</li>
+                    <li>Juego 2: ordenar las etapas de un paquete en el router</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Junior Madera</h3>
+                <ul>
+                    <li>Unidad 4, parte B: IPv6, representación y transición</li>
+                    <li>Unidad 5: ICMP, Ping y Traceroute</li>
+                    <li>Reto 3: analizar resultados de Ping y Traceroute</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Moisés Montiel</h3>
+                <ul>
+                    <li>Unidad 6: Enrutamiento en Internet</li>
+                    <li>Reto 2: interpretar una tabla de enrutamiento</li>
+                    <li>Juego 3: preguntas contrarreloj</li>
+                    <li>Bibliografía, créditos y documento de entrega</li>
+                </ul>
+            </div>
         </div>
-        <p class="hint" style="margin-top:14px">Trabajo conjunto de los cuatro: diseño general, navegación, evaluación final, revisión de contenidos y pruebas de funcionamiento.</p>
-        <p class="datos-curso"><span><b>Asignatura:</b> Telemática</span><span><b>Docente:</b> Richard Crawford V.</span><span><b>Programa:</b> Ingeniería de Sistemas</span><span><b>Universidad de Córdoba</b></span></p>
+        <p class="hint" style="margin-top:14px">Trabajo conjunto de los cuatro: diseño general, navegación, evaluación
+            final, revisión de contenidos y pruebas de funcionamiento.</p>
+        <p class="datos-curso"><span><b>Asignatura:</b> Telemática</span><span><b>Docente:</b> Richard Crawford
+                V.</span><span><b>Programa:</b> Ingeniería de Sistemas</span><span><b>Universidad de Córdoba</b></span>
+        </p>
     </main>
 
-<footer class="pie-pagina">
-    <p>OVA «La capa de Internet del modelo TCP/IP» · Telemática · Universidad de Córdoba · Autores: Juan Felipe Reino Benitez, Carlos Eduardo Garavito Mozo, Junior Madera y Moisés Montiel.</p>
-</footer>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<canvas id="fx" aria-hidden="true"></canvas>
-<div class="tip" id="tip" role="tooltip"></div>
+    <footer class="pie-pagina">
+        <p>OVA «La capa de Internet del modelo TCP/IP» · Telemática · Universidad de Córdoba · Autores: Juan Felipe
+            Reino Benitez, Carlos Eduardo Garavito Mozo, Junior Madera y Moisés Montiel.</p>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="tip" id="tip" role="tooltip"></div>
 
-<script src="js/app.js"></script>
-<script src="js/inicio.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicio.js"></script>
 </body>
 
 </html>
