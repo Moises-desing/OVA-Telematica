@@ -50,7 +50,7 @@ function sizeFx(){ const d = Math.min(window.devicePixelRatio || 1, 2); fx.width
 addEventListener('resize', sizeFx); sizeFx();
 function confetti(n, o){
   if (reduceMotion) return;
-  const cols = ['#2c5f8a', '#2a7a78', '#5f7d3a', '#c0933f', '#a8472f', '#6b4a7a'];
+  const cols = ['#2fc6b8', '#8fe0d6', '#148c82', '#eee5cf', '#2fc6b8', '#cdbf9c'];
   const ox = o ? o.x : innerWidth / 2, oy = o ? o.y : innerHeight * .32, big = n > 60;
   for (let i = 0; i < n; i++){
     const a = Math.random() * Math.PI * 2, s = (big ? 5 : 3) + Math.random() * (big ? 9 : 5);
@@ -144,7 +144,7 @@ function award(id){
 function aplicarTema(t){ document.documentElement.dataset.theme = t; }
 (function(){
   let t = null; try { t = localStorage.getItem('ova_tema'); } catch(e) {}
-  if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  if (!t) t = 'dark';   /* negro piano por defecto */
   aplicarTema(t);
 })();
 $('themeBtn').onclick = () => {
